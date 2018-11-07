@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>A Very Simple Battleship Game</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	
+	<h1>Battleship</h1>	
+
+	<p>Klik op een vakje van het speelveld om daar een torpedo af te vuren. Raak en zink alle vijandelijke schepen om te winnen!</p>
+
+  <div id="gameBoard">
+	</div>
+  
+	<script type="text/javascript" src="battleship.js"></script>
+	</body>
+</html>
