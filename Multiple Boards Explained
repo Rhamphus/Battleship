@@ -1,0 +1,82 @@
+  var myNumber = Math.random();
+  var gameBoardNumber = Math.floor(myNumber * 5);
+  console.log(gameBoardNumber);
+
+  if (gameBoardNumber < 1) {
+    var gameBoard = [
+				[0,0,0,1,1,1,1,0,0,0],
+				[0,0,0,0,0,0,0,0,0,0],
+				[0,0,0,0,0,0,0,0,0,0],
+				[0,0,0,0,0,0,1,0,0,0],
+				[0,0,0,0,0,0,1,0,0,0],
+				[1,0,0,0,0,0,1,1,1,1],
+				[1,0,0,0,0,0,0,0,0,0],
+				[1,0,0,1,0,0,0,0,0,0],
+				[1,0,0,1,0,0,0,0,0,0],
+				[1,0,0,0,0,0,0,0,0,0]
+				]
+
+  } else if (gameBoardNumber < 2) {
+    var gameBoard = [
+				[0,0,0,0,0,0,0,0,0,1],
+				[0,0,0,0,0,0,0,0,0,1],
+				[0,0,0,1,1,1,0,0,0,1],
+				[1,0,0,0,0,0,0,0,0,1],
+				[1,0,0,0,0,0,0,0,0,1],
+				[1,1,1,1,1,0,0,0,0,0],
+				[0,0,0,0,0,0,0,0,0,0],
+				[0,0,0,0,0,0,0,0,0,0],
+				[0,0,0,0,0,0,0,0,0,0],
+				[0,0,0,0,0,0,1,1,0,0]
+				]
+
+  } else if (gameBoardNumber < 3) {
+    var gameBoard = [
+			  [0,1,0,0,0,0,0,0,0,0],
+				[0,1,0,0,0,0,0,0,0,0],
+				[0,1,0,0,0,0,0,0,0,0],
+				[0,1,0,0,1,1,0,0,0,1],
+				[0,0,0,0,0,0,0,0,0,1],
+				[0,0,0,0,0,0,0,0,0,1],
+				[0,0,0,0,0,0,0,0,0,1],
+				[1,0,0,1,1,1,0,0,0,1],
+				[1,0,0,0,0,0,0,0,0,0],
+				[1,0,0,0,0,0,0,0,0,0]
+				]
+
+  } else if (gameBoardNumber < 4) {
+    var gameBoard = [
+				[0,0,0,0,0,0,0,0,0,0],
+				[1,1,1,1,1,0,0,0,0,0],
+				[0,0,0,1,0,0,0,0,0,0],
+				[0,0,0,1,0,0,0,0,1,0],
+				[0,0,0,1,0,0,0,0,1,0],
+				[0,0,0,0,0,0,0,0,1,0],
+				[0,0,0,0,1,1,0,0,1,0],
+				[0,0,0,0,0,0,0,0,0,0],
+				[0,0,0,0,0,0,0,0,0,0],
+				[1,1,1,0,0,0,0,0,0,0]
+				]
+
+  } else if (gameBoardNumber < 5) {
+    var gameBoard = [
+				[0,0,0,1,0,0,0,0,0,0],
+				[0,0,0,1,0,0,0,0,0,0],
+				[0,0,0,1,0,0,0,0,0,0],
+				[0,0,0,1,0,0,0,0,1,1],
+				[0,0,0,0,0,0,0,0,0,0],
+				[0,1,1,1,1,1,0,0,0,0],
+				[0,0,0,0,0,0,0,0,0,0],
+				[0,0,0,0,0,0,0,0,0,0],
+				[0,1,1,1,0,0,1,1,1,0],
+				[0,0,0,0,0,0,0,0,0,0]
+				]
+  }
+  
+  
+  // this part of the code is the part you need for multiple boards. First you need a variable with numbers, which has to be a
+  number that is lower than 1 and higher than 0, that's why I choose Math.Random(). You will need to have a number that has no
+  numbers after the ' , ' so you need to floor that number, and multiply it by the number of gameboards available. This part has to
+  be between brackets, since it has to be produced before you apply the Math.floor(). When finally number '3' comes out, it will 
+  play the fourth gameboard. Be careful: All the gameboards you apply should have the same name! You also need to multiply the
+  Math.random() by the number of gameboards you created, and not standard by 5!
